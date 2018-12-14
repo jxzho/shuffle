@@ -4,7 +4,7 @@
   /* shufle算法实现 */
   xio.shuffle = function (ary) {
     if (typeof ary === 'undefined') {
-      throw new Error('please introduce an array');
+      throw new Error('arguments is undefiend');
       return;
     }
     if (Object.prototype.toString.call(ary) === '[object Array]') {
@@ -20,7 +20,7 @@
 
       return newAry;
     } else {
-      throw new Error('arguments type of shuffle is not a function');
+      throw new Error('arguments must be an instance of Array');
     }
       
   };
@@ -28,7 +28,7 @@
   xio.random = function (from, to) {
     let len = to - from;
     if (len <= 0) {
-      throw new Error('arguments of random function error');
+      throw new Error('arguments error');
       return;
     }
     if (len > 0) {
