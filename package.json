@@ -1,0 +1,23 @@
+{
+  "name": "shuffle",
+  "version": "1.0.0",
+  "description": "@(2018/10/30)",
+  "main": "xio.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxzho/shuffle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jxzho/shuffle/issues"
+  },
+  "homepage": "https://github.com/jxzho/shuffle#readme",
+  "devDependencies": {
+    "rollup": "^2.70.0"
+  }
+}
