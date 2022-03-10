@@ -1,8 +1,8 @@
 {
-  "name": "shuffle",
+  "name": "xio-shuffle",
   "version": "1.0.0",
   "description": "@(2018/10/30)",
-  "main": "xio.js",
+  "main": "build/use.min.js",
   "scripts": {
     "build": "rollup -c"
   },
