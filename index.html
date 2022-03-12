@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <script src="./build/xio-shuffle.iife.js"></script>
+  <script>
+    const { shuffle } = XioShuffle
+
+    Vue.component('Demo', {
+      data() {
+        return {
+          arr: [3, 2, 5, 1, -1, 0, 20, 11, 7]
+        }
+      },
+      methods: {
+        onClick() {
+          this.arr = shuffle(this.arr)
+        }
+      },
+      template: `
+        <div>
+          <ul>
+            <li v-for="num of arr" :key="num">{{ num }}</li>
+          </ul>
+          <button @click="onClick">shuffle array</button> 
+        </div>
+      `,
+    }) 
+
+    new Vue({
+      template: `
+        <div class="demo-container">
+          <Demo />
+        </div>
+      `,
+      el: '#root',
+    })
+  </script>
+</body>
+</html>
