@@ -4,7 +4,7 @@ import babel from '@rollup/plugin-babel'
 export default {
   input: 'src/index.js',
   output: {
-    file: 'build/use.min.js',
+    file: 'build/xio-shuffle.js',
     format: 'cjs',
     sourcemap: 'inline',
   },

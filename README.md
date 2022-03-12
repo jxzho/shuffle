@@ -9,5 +9,5 @@ xio.shuffle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 ## Todo
 
-- [ ] [use babel](https://rollupjs.org/guide/en/#babel)
-- [ ] ...
+- [x] [use babel](https://rollupjs.org/guide/en/#babel)
+- [ ] 完善使用方法，示例图，demo
