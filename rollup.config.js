@@ -5,7 +5,7 @@ export default {
   input: 'src/index.js',
   output: {
     file: 'build/xio-shuffle.js',
-    format: 'cjs',
+    format: 'es',
     sourcemap: 'inline',
   },
   plugins: [
